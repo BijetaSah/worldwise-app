@@ -7,19 +7,18 @@ import {
   useMapEvent,
 } from "react-leaflet";
 
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import styles from "./Map.module.css";
 import { useEffect, useState } from "react";
 import { useCities } from "../contexts/CitiesContext";
 import { useGeolocation } from "../hooks/useGeolocation";
 import Button from "./Button";
+import { useLocationQuery } from "../hooks/useLocationQuery";
 function Map() {
   const [mapPosition, setMapPosition] = useState([
     38.727881642324164, -9.140900099907554,
   ]);
-  const [searchParams] = useSearchParams();
-  const mapLat = searchParams.get("lat");
-  const mapLng = searchParams.get("lng");
+  const [mapLat, mapLng] = useLocationQuery();
   const { cities } = useCities();
   const {
     isLoading,
@@ -27,7 +26,6 @@ function Map() {
     getPosition,
   } = useGeolocation();
 
-  console.log(geoLocationPostion);
   useEffect(
     function () {
       if (mapLat && mapLng) setMapPosition([mapLat, mapLng]);
