@@ -12,7 +12,7 @@ import CityList from "./components/CityList";
 import Form from "./components/Form";
 import { CityProvider } from "./contexts/CitiesContext";
 import { FakeAuthProvider } from "./contexts/FakeAuthContext";
-import ProtectFakeAuth from "./pages/ProtectFakeAuth";
+
 // import { useEffect, useState } from "react";
 
 function App() {
