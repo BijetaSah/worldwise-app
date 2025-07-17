@@ -1,12 +1,28 @@
-# React + Vite
+🌍 WorldWise
+Live Demo 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+WorldWise is a travel tracking app that helps you mark and organize cities you have visited on an interactive map. Built with React, it helps you remember your travels, plan future adventures, and visualize your journey worldwide.
 
-Currently, two official plugins are available:
+✨ Features
+✅ Mark cities you have visited on the map
+✅ View a list of all visited cities
+✅ Displays weather and country information for each city
+✅ Delete cities you no longer wish to track
+✅ Fully responsive and clean UI
+✅ State managed cleanly with React hooks
+✅ Uses React Router for page navigation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+React (Functional Components)
+React Router
+Custom Hooks
+Context API for global state management
+Leaflet for interactive maps
+CSS (or Tailwind, update if needed)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+💡 Core Concepts
+React Functional Components & Hooks for clean, modular code.
+Context API to manage cities globally without prop drilling.
+React Router to handle navigation between pages.
+Leaflet for map visualization, allowing dynamic city pins and interactions.
